@@ -13,5 +13,8 @@ public class Acquario {
     public Acquario(String nome, int capAcquario){
         this.nome = nome;
         this.arrPesci = new Pesce[capAcquario];
+        for (int i = 0; i < capAcquario; i++) {
+            this.arrPesci[i] = null;
+        }
     }
 }
