@@ -26,4 +26,11 @@ public class Pesce {
         str += "\n}";
         return str;
     }
+
+    public String toStringInner(){
+        String str = "";
+        str += "\"razza\" : \""+this.razza+"\",";
+        str += "\n\"colore\" : \""+this.colore+"\",";
+        return str;
+    }
 }
