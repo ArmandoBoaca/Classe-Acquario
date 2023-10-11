@@ -7,4 +7,11 @@ public class Pesce {
         this.colore = colore;
     }
 
+    public String getRazza() {
+        return razza;
+    }
+
+    public String getColore() {
+        return colore;
+    }
 }
