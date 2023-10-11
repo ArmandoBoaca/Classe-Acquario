@@ -14,4 +14,8 @@ public class Pesce {
     public String getColore() {
         return colore;
     }
+
+    public Pesce clone(){
+        return new Pesce(this.razza, this.colore);
+    }
 }
