@@ -9,4 +9,9 @@ public class Acquario {
             this.arrPesci[i] = arrPesci[i].clone();
         }
     }
+
+    public Acquario(String nome, int capAcquario){
+        this.nome = nome;
+        this.arrPesci = new Pesce[capAcquario];
+    }
 }
