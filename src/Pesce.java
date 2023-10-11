@@ -18,4 +18,12 @@ public class Pesce {
     public Pesce clone(){
         return new Pesce(this.razza, this.colore);
     }
+
+    public String toString(){
+        String str = "{";
+        str += "\n\"razza\" : \""+this.razza+"\",";
+        str += "\n\"colore\" : \""+this.colore+"\"";
+        str += "\n}";
+        return str;
+    }
 }
