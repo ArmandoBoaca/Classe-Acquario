@@ -1,3 +1,5 @@
+import java.util.AbstractQueue;
+
 public class Acquario {
     private String nome;
     private Pesce[] arrPesci;
@@ -45,6 +47,11 @@ public class Acquario {
     public void removeArrPesce(int i){
         this.arrPesci[i] = null;
     }
+
+    public Acquario clone(){
+        return new Acquario(this.nome, this.arrPesci);
+    }
+    
 
 
 }
