@@ -51,7 +51,17 @@ public class Acquario {
     public Acquario clone(){
         return new Acquario(this.nome, this.arrPesci);
     }
-    
+
+    public String toString(){
+        String str = "{";
+        str+= "\n\"Nome\" : \""+this.nome+"\", ";
+        str+= "\n\"ArrPesci\" : ";
+        for (int i = 0; i < arrPesci.length; i++) {
+            str+= this.arrPesci[i].toString();
+
+        }
+        return str;
+    }
 
 
 }
