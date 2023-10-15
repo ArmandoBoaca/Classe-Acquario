@@ -33,4 +33,18 @@ public class Acquario {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    public void addArrPesce(Pesce pesce){
+        int i = 0;
+        while(this.arrPesci[i] =! null ){
+            i++;
+        }
+        this.arrPesci[i] = pesce.clone();
+    }
+
+    public void removeArrPesce(int i){
+        this.arrPesci[i] = null;
+    }
+
+
 }
