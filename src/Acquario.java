@@ -17,4 +17,20 @@ public class Acquario {
             this.arrPesci[i] = null;
         }
     }
+
+    public String getNome(){
+        return this.nome;
+    }
+
+    public String getRazzaPesceI(int i){
+        return this.arrPesci[i].getRazza();
+    }
+
+    public String getColorePesceI(int i){
+        return this.arrPesci[i].getColore();
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 }
