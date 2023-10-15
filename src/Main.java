@@ -13,7 +13,10 @@ public class Main {
         Pesce p3 = new Pesce("Trota","Azzurro");
         Pesce p4 = new Pesce("Salmone","Arancione");
         Pesce p5 = new Pesce("Tonno","Grigio");
-
+        System.out.println("\n");
+        Pesce[] arr = {p1,p2,p3,p4,p5};
+        Acquario a1 = new Acquario("Genova", arr);
+        System.out.println(a1.toString());
 
     }
 }

@@ -38,7 +38,7 @@ public class Acquario {
 
     public void addArrPesce(Pesce pesce){
         int i = 0;
-        while(this.arrPesci[i] =! null ){
+        while(this.arrPesci[i] != null ){
             i++;
         }
         this.arrPesci[i] = pesce.clone();
@@ -55,11 +55,15 @@ public class Acquario {
     public String toString(){
         String str = "{";
         str+= "\n\"Nome\" : \""+this.nome+"\", ";
-        str+= "\n\"ArrPesci\" : ";
+        str+= "\n\"ArrPesci\" : [";
         for (int i = 0; i < arrPesci.length; i++) {
-            str+= this.arrPesci[i].toString();
-
+            if (i != arrPesci.length-1 ){
+                str+= "\n"+this.arrPesci[i].toString()+", ";
+            }else {
+                str += "\n"+this.arrPesci[i].toString()+"]";
+            }
         }
+        str += "\n}";
         return str;
     }
 
